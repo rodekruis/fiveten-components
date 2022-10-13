@@ -1,0 +1,5 @@
+# See .gitignore
+
+# Don't format generated code
+package*.json
+
