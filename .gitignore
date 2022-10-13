@@ -1,0 +1,9 @@
+# (local) Configuration files
+.env
+.env.*
+!.env.example
+
+# Generated code
+
+# Third party code
+node_modules

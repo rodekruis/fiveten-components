@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dotiful.dotfiles-syntax-highlighting",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "anteprimorac.html-end-tag-labels",
+    "whtouche.vscode-js-console-utils",
+    "esbenp.prettier-vscode",
+    "davidanson.vscode-markdownlint",
+    "ban.spellright",
+    "redhat.vscode-yaml"
+  ]
+}
