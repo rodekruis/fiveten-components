@@ -4,7 +4,9 @@
   "author": "510 Development Team <support@510.global>",
   "license": "Apache-2.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:syntax": "prettier --check '**/*.{md,yml,js,json,ts,scss,html}'",
+    "fix:syntax": "npm run lint:syntax -- --write",
+    "test": "npm run lint:syntax && echo \"\\nNo component tests specified.\\n\" && exit 0"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
