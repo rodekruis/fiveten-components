@@ -1,0 +1,20 @@
+{
+  "name": "fiveten-heading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodekruis/fiveten-components.git"
+  },
+  "author": "510 Development Team <support@510.global>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rodekruis/fiveten-components/issues"
+  },
+  "homepage": "https://github.com/rodekruis/fiveten-components#readme"
+}
