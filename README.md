@@ -57,7 +57,7 @@ To run all tests for all components, run:
 
 To run tests for a specific component, run:
 
-    npm test --workspace <component-name>
+    npm test -- -t="<component-name>"
 
 ### How to write tests for a component
 
