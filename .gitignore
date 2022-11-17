@@ -1,9 +1,23 @@
-# (local) Configuration files
-.env
-.env.*
-!.env.example
-
 # Generated code
+dist/
+www/
+loader/
 
 # Third party code
 node_modules
+.stencil/
+
+# Misc
+*~
+*.sw[mnpcod]
+*.log
+*.lock
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
