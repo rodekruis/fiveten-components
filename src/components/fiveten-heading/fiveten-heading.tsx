@@ -8,9 +8,7 @@ import { Component, Host, h } from '@stencil/core';
 export class FivetenHeading {
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <Host><h2><slot></slot></h2></Host>
     );
   }
 }
