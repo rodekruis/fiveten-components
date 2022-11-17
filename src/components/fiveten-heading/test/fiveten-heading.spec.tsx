@@ -10,7 +10,9 @@ describe('fiveten-heading', () => {
     expect(page.root).toEqualHtml(`
       <fiveten-heading>
         <mock:shadow-root>
-          <slot></slot>
+          <h2>
+            <slot></slot>
+          </h2>
         </mock:shadow-root>
       </fiveten-heading>
     `);
