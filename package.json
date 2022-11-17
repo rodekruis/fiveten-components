@@ -3,12 +3,34 @@
   "version": "1.0.0",
   "author": "510 Development Team <support@510.global>",
   "license": "Apache-2.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
   "scripts": {
-    "lint:syntax": "prettier --check '**/*.{md,yml,js,json,ts,scss,html}'",
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "generate": "stencil generate",
+    "lint:syntax": "prettier --check \"**/*.{md,yml,js,json,ts,tsx,scss,html}\"",
     "fix:syntax": "npm run lint:syntax -- --write",
-    "test": "npm run lint:syntax && echo \"\\nNo component tests specified.\\n\" && exit 0"
+    "test": "npm run lint:syntax && stencil test --spec --e2e",
+    "test:watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.13.0"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "prettier": "^2.7.1",
+    "puppeteer": "^10.0.0"
   }
 }
