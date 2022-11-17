@@ -1,5 +1,9 @@
 # See .gitignore
+dist/
+www/
+loader/
 
 # Don't format generated code
 package*.json
-
+src/components.d.ts
+src/components/**/readme.md
