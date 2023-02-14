@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FivetenHeading {
+        "size": number;
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FivetenHeading {
+        "size"?: number;
     }
     interface IntrinsicElements {
         "fiveten-heading": FivetenHeading;
