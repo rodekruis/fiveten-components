@@ -16,6 +16,8 @@ export class FivetenHeading {
       return 6;
     }
 
+    this.size = Math.floor(this.size)
+
     if(this.size < 1) {
       return 1
     }
